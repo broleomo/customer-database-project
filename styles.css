@@ -1,0 +1,19 @@
+.container {
+  border: 2px solid black;
+  display:flex;
+  flex-wrap:wrap;
+  width: 80%;
+  align-self: center;
+}
+
+h2 {
+  justify-content: center;
+}
+body {
+  align-items: center;
+}
+
+.name {
+  text-transform: uppercase;
+  border-bottom:
+}
