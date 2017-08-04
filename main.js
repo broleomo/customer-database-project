@@ -8,8 +8,9 @@ let container = document.querySelector('.container');
   for (let i = 0;i < customers.results.length; i++){
     let directory = document.createElement('div');
     directory.innerHTML = `
+    <div class="customer">
     <div class="photo">
-    <img src= ${customers.results[i].picture.large}>
+    <img src=${customers.results[i].picture.large}>
     </div>
     <div class="name">
     ${customers.results[i].name.first}
@@ -20,9 +21,14 @@ let container = document.querySelector('.container');
     </div>
     <div class="address">
     ${customers.results[i].location.street}
+    </div>
+    <div class="city">
     ${customers.results[i].location.city}
     ${customers.results[i].location.state}
+    </div>
+    <div class="tel">
     ${customers.results[i].phone}
+    </div>
     </div>
     `;
 container.appendChild(directory);
